@@ -14,6 +14,7 @@ public class Principal {
 
             o.writeObject(p1);
             o.writeObject(p2);
+            o.writeObject(p3);
 
             o.close();
             f.close();
@@ -25,9 +26,11 @@ public class Principal {
 
             Aluno pr1 = (Aluno) oi.readObject();
             Aluno pr2 = (Aluno) oi.readObject();
+            Aluno pr3 = (Aluno) oi.readObject();
 
             System.out.println(pr1.toString());
             System.out.println(pr2.toString());
+            System.out.println(pr3.toString());
 
 
             oi.close();
