@@ -18,6 +18,15 @@ public class Aluno {
         curso.alunos.add(this); // Adiciona o aluno na lista de alunos do curso
     }
 
+    Curso obterCursoPorNome (String nome) {
+        for (Curso curso : this.cursos) { // Percorre a lista de cursos do aluno
+            if (curso.nome.equalsIgnoreCase(nome)) { // Compara o nome do curso com o nome passado como parâmetro
+                return curso; // Retorna o curso encontrado
+            }
+        }
+        return null; // Retorna null se o curso não for encontrado
+    }
+
     @Override
     public String toString() {
         return "Meu nome é " + nome;

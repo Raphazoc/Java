@@ -27,17 +27,29 @@ public class CursoEAlunoTeste {
             System.out.println("- " + aluno.nome); // Acessa o atributo nome do aluno
 
         }
+        System.out.println("  "); // Linha em branco para melhor visualização
         System.out.println("Alunos do curso " + curso2.nome + ":"); // Acessa o atributo final nome do curso2
         for (Aluno aluno : curso2.alunos) { // Percorre a lista de alunos do curso2
             System.out.println("- " + aluno.nome); // Acessa o atributo nome do aluno
 
         }
+        System.out.println("  "); // Linha em branco para melhor visualização
         System.out.println("Alunos do curso " + curso3.nome + ":"); // Acessa o atributo final nome do curso3
         for (Aluno aluno : curso3.alunos) { // Percorre a lista de alunos do curso3
             System.out.println("- " + aluno.nome); // Acessa o atributo nome do aluno
         }
 
-        System.out.println(aluno1.cursos.get(0).alunos); // Acessa o primeiro curso do aluno1 e imprime a lista de alunos desse curso
-
+        System.out.println("  "); // Linha em branco para melhor visualização
+        aluno1.obterCursoPorNome("Matemática"); // Busca o curso de nome "Matemática" na lista de cursos do aluno1)
+        Curso cursoEncontrado = aluno1.obterCursoPorNome("Matemática");
+        if (cursoEncontrado != null) {
+            System.out.println("Curso encontrado: " + cursoEncontrado.nome);
+            System.out.println("Alunos do curso " + cursoEncontrado.nome + ":");
+            for (Aluno aluno : cursoEncontrado.alunos) { // Percorre a lista de alunos do curso encontrado
+                System.out.println("- " + aluno.nome); // Acessa o atributo nome do aluno
+            }
+        } else {
+            System.out.println("Curso não encontrado.");
+        }
     }
-}
+} // Fim da classe CursoEAlunoTeste
