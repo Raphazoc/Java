@@ -17,4 +17,9 @@ public class Aluno {
         this.cursos.add(curso); // Adiciona o curso na lista de cursos do aluno
         curso.alunos.add(this); // Adiciona o aluno na lista de alunos do curso
     }
+
+    @Override
+    public String toString() {
+        return "Meu nome é " + nome;
+    }
 }
