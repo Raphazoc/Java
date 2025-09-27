@@ -1,4 +1,4 @@
-package Udemy.lista.Pilha;
+package Udemy.Pilha;
 
 import java.util.Deque;
 

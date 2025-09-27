@@ -1,4 +1,4 @@
-package Udemy.lista.Queue;
+package Udemy.Queue;
 
 import java.util.LinkedList;
 import java.util.Queue;
