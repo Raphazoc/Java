@@ -1,6 +1,6 @@
 package Udemy.POO.Composicao.MuitosPraMuitos;
 
-public class CursoEAlunoTeste {
+public class eCursoEAlunoTeste {
 
     public static void main(String[] args) {
         Aluno aluno1 = new Aluno("João");
