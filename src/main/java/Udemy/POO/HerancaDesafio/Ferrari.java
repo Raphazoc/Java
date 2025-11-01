@@ -1,26 +1,21 @@
 package Udemy.POO.HerancaDesafio;
 
-public class Ferrari {
+public class Ferrari extends Carro {
 
-    int velocidade;
-    int marcha;
-    String modelo;
+    public Ferrari() {
+        super();
+    }
 
-    void acelerar() {
+    public Ferrari(String modelo) {
+        super(modelo);
+    }
+
+    public void acelerar() {
         velocidade += 15;
     }
 
-    void frear() {
-        velocidade -= 5;
-    }
-
-     void trocarMarcha(int novaMarcha) {
-        marcha = novaMarcha;
-    }
-
-    void exibirEstado() {
-        System.out.println("Modelo: " + modelo);
-        System.out.println("Velocidade: " + velocidade + " km/h");
-        System.out.println("Marcha: " + marcha);
+    public void turbo() {
+        System.out.println("Ativando turbo na Ferrari!");
+        velocidade += 25;
     }
 }

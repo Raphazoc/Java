@@ -6,12 +6,23 @@ public class Carro {
     int marcha;
     String modelo;
 
+    public Carro() {
+        this.velocidade = 0;
+        this.marcha = 0;
+    }
 
-    void acelerar() {
+    public Carro(String modelo) {
+        this.modelo = modelo;
+        this.velocidade = 0;
+        this.marcha = 0;
+    }
+
+
+    public void acelerar() {
         velocidade += 5;
     }
 
-    void frear() {
+    public void frear() {
         if (velocidade >= 5) {
             velocidade -= 5;
         } else {
@@ -19,15 +30,16 @@ public class Carro {
         }
     }
 
-    void trocarMarcha(int novaMarcha) {
+    public void trocarMarcha(int novaMarcha) {
         marcha = novaMarcha;
     }
 
-    void exibirEstado() {
+    public void exibirEstado() {
         System.out.println("Modelo: " + modelo);
         System.out.println("Velocidade: " + velocidade + " km/h");
         System.out.println("Marcha: " + marcha);
     }
+
 
 
 }
