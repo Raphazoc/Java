@@ -11,8 +11,6 @@ public class CalculoTeste2 {
 
         soma = (a, b) -> a + b; // Funcao Lambda express
         System.out.println(soma.executar(2, 8)); // Executando a funcao lambda
-
-        System.out.println(soma.legal());
     }
 
 }

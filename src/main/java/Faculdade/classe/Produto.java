@@ -12,6 +12,9 @@ public class Produto {
         nome = nomeInicial;
         preco = precoInicial;
     }
+    public Produto(String string, double d, double e) {
+        //TODO Auto-generated constructor stub
+    }
     double precoComDesconto () {
         return preco * (1 - desconto);
     }
